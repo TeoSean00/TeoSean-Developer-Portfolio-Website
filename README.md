@@ -1,3 +1,2 @@
 ## Personal Portfolio
-
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+My first developer portfolio website that documents my journey in the software engineering realm thus far! Done using React and Next.js, still a work in progress.
