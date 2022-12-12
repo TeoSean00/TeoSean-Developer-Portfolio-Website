@@ -9,8 +9,8 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'E-Commerce',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    title: 'React Movieapp',
+    description:"tbf",
     image: '/images/2.png',
     tags: ['React', 'JavaScript'],
     source: 'https://google.com',
@@ -20,11 +20,13 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: '2021 July', text: 'Started my journey with my first Python course'},
+  { year: '2021 Aug', text: 'Enrolled in SMU Bachelor of Science (Information Systems)'},
+  { year: '2022 May', text: 'Picked up my first Full Stack Developer Internship at IMDA for 7 months'},
+  { year: '2022 Aug', text: 'Received the acclaimed Singapore Digital (SG:D) Scholarship from IMDA'},
+  { year: '2022 Sep', text: 'Created my first small solo project, a React Movieapp that is listed above!'},
+  { year: '2022 Nov', text: 'Completed my first major school development project (SGXchange) in Vue.js, which received notable feedbacks'},
+  { year: '2022 Dec', text: 'Built my own portfolio website in React'},
 ];
 
 export const AccomplishmentData = [
