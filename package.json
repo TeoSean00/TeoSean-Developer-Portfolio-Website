@@ -1,8 +1,11 @@
 {
   "name": "portfolio_nextjs",
   "version": "0.1.0",
+  "homepage": "https://teosean.me/",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start"
@@ -15,5 +18,8 @@
     "react-icons": "^4.2.0",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
