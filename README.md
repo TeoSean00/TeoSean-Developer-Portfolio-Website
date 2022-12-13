@@ -1,6 +1,6 @@
 ## Personal Portfolio
 My first developer portfolio website that documents my journey in the software engineering realm thus far! Done using React and Next.js, and deployed via Github Pages with a custom domain, still a work in progress.
-&nbsp;
+&nbsp;&nbsp;
 
 ## To acess deployed website
 visit https://teosean.me/
