@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -19,7 +20,8 @@
     "vue-router": "^4.0.3",
     "vuetify": "^3.0.0-beta.0",
     "vuex": "^4.0.0",
-    "webfontloader": "^1.0.0"
+    "webfontloader": "^1.0.0",
+    "execa": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

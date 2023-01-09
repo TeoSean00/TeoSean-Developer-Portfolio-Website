@@ -169,12 +169,12 @@
             </v-row> -->
             <v-row class="mx-0 mt-3 mb-1">
                 <v-col cols="6" class="text-center">
-                    <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/" target="_blank">
+                    <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/TeoSean-Developer-Portfolio-Website" target="_blank">
                         Code
                     </v-btn>
                 </v-col>
                 <v-col cols="6" class="text-center">
-                    <v-btn class="projectbutton text-none text-wrap" href="https://teosean.me" target="_blank">
+                    <v-btn class="projectbutton text-none text-wrap" href="https://teosean.me">
                         Website
                     </v-btn>
                 </v-col>
