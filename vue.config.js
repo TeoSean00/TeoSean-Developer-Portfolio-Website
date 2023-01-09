@@ -1,7 +1,3 @@
-module.exports = {
-  publicPath: '/TeoSean-Developer-Portfolio-Website/'
-}
-
 const { defineConfig } = require('@vue/cli-service')
 const { matchedRouteKey } = require('vue-router')
 module.exports = defineConfig({
