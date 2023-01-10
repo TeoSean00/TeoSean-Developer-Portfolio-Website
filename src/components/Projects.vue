@@ -190,7 +190,7 @@
           <v-card class="experiencecard" shaped>
               <v-row>
                   <v-col cols="12" style="padding: 0;">
-                      <v-img src="@/assets/SGXchange.png"></v-img>
+                      <v-img src="@/assets/reactmovie.png"></v-img>
                   </v-col>
               </v-row>
               <v-row>

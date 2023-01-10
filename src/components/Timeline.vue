@@ -64,7 +64,7 @@ export default {
         },
         {
           year: '2022 Nov',
-          text: 'Led and completed my first major school development project, titled \'SGXchange\' by collaborating with some friends. Developed using primarily Vue.js & Firebase with multiple external APIs, and it received notable feedbacks from the professors and achieved the highest score'
+          text: 'Completed my first major school development project, titled \'SGXchange\' by collaborating and brainstorming with some friends. Developed with primarily Vue.js & Firebase with multiple external APIs, and it received notable feedbacks from the professors and achieved the highest score'
         },
         {
           year: '2022 Dec',
