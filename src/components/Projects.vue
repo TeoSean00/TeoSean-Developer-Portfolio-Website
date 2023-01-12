@@ -33,7 +33,12 @@
             <v-row style="margin: 0;">
                 <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
                     <v-card-text class="cardtext" style="padding-bottom: 0;">
-                        A website designed to help students with the overseas exchange application process by consolidating all the vital scatterered information, along with an automated module mapping, user authentication, nearby attractions locater and a review reading/adding system functionality that is made unique to every university.
+                        A website designed to help students with the overseas exchange application process by 
+                        web scraping and consolidating all the vital scatterered information, along with originally 
+                        designed and self-built system functionalities such as automated modules mapping, user 
+                        authentication, nearby attractions locater, a review system for reading/adding and a university 
+                        favouriting system functionality that is made unique to every university. A collaborative team 
+                        effort brainstormed and developed together with a group of friends!
                     </v-card-text>
                 </v-col>
             </v-row>
@@ -84,12 +89,12 @@
             </v-row> -->
             <v-row class="mx-0 mt-3 mb-1">
                 <v-col cols="6" class="text-center">
-                    <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/" target="_blank">
+                    <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/SMU-WAD2-SGXChange" target="_blank">
                         Code
                     </v-btn>
                 </v-col>
                 <v-col cols="6" class="text-center">
-                    <v-btn class="projectbutton text-none text-wrap" href="https://sgxchange.vercel.app/" target="_blank">
+                    <v-btn class="projectbutton text-none text-wrap" href="https://smu-wad2-teosean-sgxchange.vercel.app/" target="_blank">
                         Website
                     </v-btn>
                 </v-col>
@@ -120,7 +125,8 @@
                     <v-card-text class="cardtext" style="padding-bottom: 0;">
                         My first developer portfolio website that documents my journey in the software engineering realm thus far! It showcases my relevant
                         tech experience, projects, tech stacks, my developer timeline and accomplishments thus far.
-                        Built using Vue.js, Vuetify & CSS primarily and deployed via Github Pages with a custom personal domain, a constant work in progress!
+                        Built primarily using Vue.js, Vuetify, CSS, Bootstrap, together with EmailJS and deployed via Github Pages with a 
+                        custom personal domain, a constant work in progress!
                     </v-card-text>
                 </v-col>
             </v-row>
@@ -206,9 +212,11 @@
               <v-row style="margin: 0;">
                   <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
                       <v-card-text class="cardtext" style="padding-bottom: 0;">
-                        My very first solo project, which aims to create a movie catalogue by fetching movie data from an external api,
-                        "http://omdbapi.com/apikey.aspx". It then displays the relevant movie's poster picture, title, along with its year launched
-                         specific to every returned movie that fufilled the initial user search.              
+                        My very first React and Solo Project. This project aims to create a movie catalogue by fetching movie data 
+                        from an external api, "http://omdbapi.com/apikey.aspx". It then displays the 
+                        relevant movies' poster picture, title, 
+                        along with its type (movie/series) specific to every returned show that fufilled 
+                        the initial user search.         
                       </v-card-text>
                   </v-col>
               </v-row>
@@ -259,7 +267,7 @@
                       </v-btn>
                   </v-col>
                   <v-col cols="6" class="text-center">
-                      <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/React-First-Project-Movie-Application" target="_blank">
+                      <v-btn class="projectbutton text-none text-wrap" href="https://teosean-react-first-solo-project-movieapp.vercel.app/" target="_blank">
                           Website
                       </v-btn>
                   </v-col>
