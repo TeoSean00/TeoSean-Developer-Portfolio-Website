@@ -3,20 +3,22 @@
     <v-container fluid class="main">
       <!-- Navbar component -->
       <NavBar />
-      <!-- Head/Welcome component -->
-      <WelcomeHead />
-      <!-- Experience component -->
-      <Experience />
-      <!-- Projects component -->
-      <Projects />
-      <!-- Technologies component -->
-      <Technologies />
-      <!-- Timeline component -->
-      <Timeline />
-      <!-- Accomplishments component -->
-      <Accomplishments />
-      <!-- Contact component -->
-      <Contact />
+        <v-container style="max-width: 1325px;">
+          <!-- Head/Welcome component -->
+          <WelcomeHead />
+          <!-- Experience component -->
+          <Experience />
+          <!-- Projects component -->
+          <Projects />
+          <!-- Technologies component -->
+          <Technologies />
+          <!-- Timeline component -->
+          <Timeline />
+          <!-- Accomplishments component -->
+          <Accomplishments />
+          <!-- Contact component -->
+          <Contact />
+        </v-container>
     </v-container>
     <!-- Footer component -->
     <FooterView/>

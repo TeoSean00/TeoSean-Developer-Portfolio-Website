@@ -86,10 +86,13 @@ export default {
         if(this.sender_name !== '' && this.sender_org !== '' && this.sender_message !== '' && this.sender_email !== ''){
             emailjs.sendForm('service_zavzs48', 'template_dm0un79', this.$refs.form, 'Fia4_4nphvVTgneZc')
             .then((result) => {
-                alert('You have successfully sent over a message!')
+                alert('You have successfully sent over a message, I will get back to you promptly :). The page will now be refreshed.')
                 console.log('SUCCESS', result.text);
+                setTimeout(() => {
+                    location.reload();
+                }, 500);
             }, (error) => {
-                alert('Unfortunately, the sending of the message is unsuccessful, it will be looked into immediately.')
+                alert('Unfortunately, the sending of the message is unsuccessful, it will be looked into immediately. For other methods of communication, please feel free to tap on the various contact icons on the left instead :)')
                 console.log('FAILED', error.text);
             });
         }
@@ -150,6 +153,10 @@ export default {
     background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
     width: 25%;
     font-size: 0.95rem;
+    transition: 0.05s;
 }
-
+.formbutton:hover{
+    transform: translateY(-2px);
+    box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+}
 </style>

@@ -17,7 +17,7 @@
             <v-col cols="12" xs="12" sm="7" md="9">
               <v-row>
                 <v-col cols="12">
-                  <v-card-title style="font-size: 1.6rem; " class="text-wrap">
+                  <v-card-title style="font-size: 1.35rem; " class="text-wrap">
                     Infocomm Media Development Authority (IMDA)
                   </v-card-title>
                 </v-col>
@@ -74,7 +74,7 @@
             <v-col cols="12" xs="12" sm="7" md="9">
               <v-row>
                 <v-col cols="12">
-                  <v-card-title style="font-size: 1.6rem; " class="text-wrap">
+                  <v-card-title style="font-size: 1.4rem; " class="text-wrap">
                     SMU Web Application Development 2 Module
                   </v-card-title>
                 </v-col>
@@ -115,10 +115,10 @@
                   </li>
                   <li class="experiencelist">
                     Created an automated web application-wide module mapping, user authentication & profile functionality, along with a review
-                    viewing/adding & favoriting system functionality that is unique to every university as well
+                    viewing/ adding & favouriting system functionality that is unique to every university as well
                   </li>
                   <li class="experiencelist">
-                    Developed with Vue.js, CSS, Bootstrap, Ant Design, JavaScript, Firebase\'s Firestore & Realtime Database (database, querying,
+                    Developed with Vue.js, CSS, Bootstrap, Ant Design, JavaScript, Firebase's Firestore & Realtime Database (database, querying,
                     authentication) & deployed using Vercel, Website Link: <a href="https://sgxchange.vercel.app/" target="__blank" style="color: #9cc9e3">SGXchange.vercel.app</a>
                   </li>
                 </ul>
@@ -156,5 +156,11 @@ export default{
 }
 .experiencelist{
   margin-bottom: 0.75em;
+}
+@media only screen and (max-width: 341px) {
+  .experiencelist{
+    margin-bottom: 0.75em;
+    font-size: 0.95rem !important;
+  }
 }
 </style>

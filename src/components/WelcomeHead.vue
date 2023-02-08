@@ -90,9 +90,29 @@ export default {
 .headerfont{
   font-size: 3.5rem;
 }
+@media only screen and (max-width: 585px){
+  .headerfont{
+    font-size: 2.5rem !important;
+  }
+}
+@media only screen and (max-width: 400px){
+  .headerfont{
+    font-size: 1.8rem !important;
+  }
+}
+@media only screen and (max-width: 345px){
+  .headerfont{
+    font-size: 1.6rem !important;
+  }
+}
 .pfont{
   color: rgb(133, 137, 163);
   font-size: 1.3rem;
+}
+@media only screen and (max-width: 390px){
+  .pfont{
+    font-size: 1.2rem !important;
+  }
 }
 .image{
   height: 100%;
@@ -114,5 +134,21 @@ export default {
   background-color: #fff;
   background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
   width: 100%;
+  transition: 0.05s;
+}
+.button:hover{
+  transform: translateY(-2px);
+  box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+}
+@media only screen and (max-width: 350px){
+  .button{
+    color: hsl(204,23.8%,95.9%); 
+    font-family: Space Grotesk;
+    font-size: 1.1rem !important;
+    background-color: #fff;
+    background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
+    width: 100%;
+    transition: 0.05s;
+  }
 }
 </style>

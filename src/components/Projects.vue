@@ -36,7 +36,7 @@
                         A website designed to help students with the overseas exchange application process by 
                         web scraping and consolidating all the vital scatterered information, along with originally 
                         designed and self-built system functionalities such as automated modules mapping, user 
-                        authentication, nearby attractions locater, a review system for reading/adding and a university 
+                        authentication, nearby attractions locater, a review system for reading/ adding and a university 
                         favouriting system functionality that is made unique to every university. A collaborative team 
                         effort brainstormed and developed together with a group of friends!
                     </v-card-text>
@@ -326,9 +326,18 @@ export default {
 .cardtitle{
     color: #9cc9e3;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem !important;
     padding: 0;
 }
+
+@media only screen and (max-width: 390px){
+    .cardtitle{
+        color: #9cc9e3;
+        text-align: center;
+        font-size: 1rem !important;
+        padding: 0;
+    }
+  }
 .yellowsection{
     background: #d0bb57;
     width: 3.5rem;
@@ -340,6 +349,12 @@ export default {
 .cardtext{
     text-align: justify;
     font-size: 1.1rem;
+}
+@media only screen and (max-width: 398px) {
+    .cardtext{
+        text-align: justify;
+        font-size: 0.8rem !important;
+    }
 }
 .cardtechstack{
     text-align: center;
@@ -381,5 +396,24 @@ export default {
     background: #6b3030;
     transition: 0.5s;
     font-size: 1rem;
+    transition: 0.05s;
 }
+.projectbutton:hover{
+    transform: translateY(-2px);
+    box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+}
+@media only screen and (max-width: 380px){
+    .projectbutton{
+        color: #d4c0c0;
+        background: #6b3030;
+        transition: 0.5s;
+        font-size: 0.75rem !important;
+        transition: 0.05s;
+    }
+    .projectbutton:hover{
+        transform: translateY(-2px);
+        box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+    }    
+}
+
 </style>

@@ -86,7 +86,7 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        Spring Framework
+                        Springboot Framework
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-java</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
@@ -162,6 +162,11 @@ export default {
   color: rgb(133, 137, 163);
   font-size: 1.3rem;
 }
+@media only screen and (max-width: 390px){
+    .pfont{
+      font-size: 1.1rem !important;
+    }
+}  
 .button{
     color: hsl(204,23.8%,95.9%); 
     font-family: Space Grotesk;
@@ -182,6 +187,14 @@ export default {
     font-size: 1.3rem;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+@media only screen and (max-width: 415px){
+    .techlistitem{
+        color: rgb(133, 137, 163);
+        font-size: 1.1rem !important;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 .iconsize{
     font-size: 1.4rem;

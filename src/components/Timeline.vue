@@ -98,6 +98,16 @@ export default {
   color: rgb(133, 137, 163);
   font-size: 1.12rem;
 }
+@media only screen and (max-width: 390px) {
+  .monthtext{
+    color: rgb(133, 137, 163);
+    font-size: 0.85rem !important;
+  }
+  .month{
+    color: rgb(133, 137, 163);
+    font-size: 1.1rem !important;
+  }
+}
 .componentdivider{
     width: 4.5rem;
     height: 0.3rem;

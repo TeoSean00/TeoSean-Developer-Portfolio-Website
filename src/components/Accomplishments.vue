@@ -18,14 +18,14 @@
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
                   <v-col cols="12">
-                    <v-card-title style="font-size: 1.6rem;" class="text-wrap">
+                    <v-card-title style="font-size: 1.38rem;" class="text-wrap">
                       Singapore Digital (SG:D) Scholarship Recipient
                     </v-card-title>
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="12">
-                    <v-card-subtitle style="font-size: 1.2rem;" class="text-wrap">
+                    <v-card-subtitle style="font-size: 1.1rem;" class="text-wrap">
                         Issued by Infocomm Media Development Authority (IMDA) · Aug 2022
                     </v-card-subtitle>
                   </v-col>
@@ -38,7 +38,7 @@
             </v-row>
             <v-row class="mt-3">
               <v-col cols="12" class="pt-0">
-                <v-card-text style="font-size: 1.1rem;" class="text-wrap">
+                <v-card-text style="font-size: 1rem;" class="text-wrap">
                     The Singapore Digital (SG:D) Scholarship (Undergraduate) is an industry scholarship 
                     that empowers students interested in pursuing tech or media-related studies at 
                     the undergraduate level with a wealth of opportunities.
@@ -57,14 +57,14 @@
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
                   <v-col cols="12">
-                    <v-card-title style="font-size: 1.6rem;" class="text-wrap">
+                    <v-card-title style="font-size: 1.38rem;" class="text-wrap">
                       SMU SCIS Dean's List (AY 21/22)
                     </v-card-title>
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="12">
-                    <v-card-subtitle style="font-size: 1.2rem;" class="text-wrap">
+                    <v-card-subtitle style="font-size: 1.1rem;" class="text-wrap">
                         Issued by SMU School of Computing & Information Systems · Aug 2022
                     </v-card-subtitle>
                   </v-col>
@@ -77,7 +77,7 @@
             </v-row>
             <v-row class="mt-3">
               <v-col cols="12" class="pt-0">
-                <v-card-text style="font-size: 1.1rem;" class="text-wrap">
+                <v-card-text style="font-size: 1rem;" class="text-wrap">
                     To qualify for a place on the Dean's List, a student must meet the following requirements:
                     <ul style="margin-top: 0.5rem;">
                         <li class="listaccomplishment">
@@ -109,14 +109,14 @@
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
                   <v-col cols="12">
-                    <v-card-title style="font-size: 1.6rem;" class="text-wrap">
-                      SMU SCIS Ace Programme's Professional Development Director
+                    <v-card-title style="font-size: 1.35rem;" class="text-wrap">
+                      SMU SCIS Ace Program Professional Development Director
                     </v-card-title>
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="12">
-                    <v-card-subtitle style="font-size: 1.2rem;" class="text-wrap">
+                    <v-card-subtitle style="font-size: 1.1rem;" class="text-wrap">
                         Issued by SMU School of Computing & Information Systems Ace Programme · Apr 2022 - Present
                     </v-card-subtitle>
                   </v-col>
@@ -129,7 +129,7 @@
             </v-row>
             <v-row class="mt-3">
               <v-col cols="12" class="pt-0">
-                <v-card-text style="font-size: 1.1rem;" class="text-wrap">
+                <v-card-text style="font-size: 0.95rem;" class="text-wrap">
                   The SCIS ACE Programme aims to provide outside-the-classroom learning and growth opportunities to 
                   students who have made contributions to the SCIS population through student life, representation, and outreach.                
                 </v-card-text>
@@ -145,14 +145,14 @@
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
                   <v-col cols="12">
-                    <v-card-title style="font-size: 1.6rem;" class="text-wrap">
+                    <v-card-title style="font-size: 1.38rem;" class="text-wrap">
                       SMU SCIS Achievements Scholarship Recipient
                     </v-card-title>
                   </v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="12">
-                    <v-card-subtitle style="font-size: 1.2rem;" class="text-wrap">
+                    <v-card-subtitle style="font-size: 1.1rem;" class="text-wrap">
                         Issued by SMU School of Computing & Information Systems · May 2021
                     </v-card-subtitle>
                   </v-col>
@@ -165,7 +165,7 @@
             </v-row>
             <v-row class="mt-3">
               <v-col cols="12" class="pt-0">
-                <v-card-text style="font-size: 1.1rem;" class="text-wrap">
+                <v-card-text style="font-size: 1rem;" class="text-wrap">
                     SCIS takes pride in training computing professionals to create value for 
                     business and society, through innovative IT solutioning. 
                     The opportunity to attain this scholarship is a strong privilege 
@@ -188,6 +188,10 @@ export default {
 </script>
 
 <style>
+.cardtitle{
+  font-size: 1rem;
+}
+
 .componentdivider{
     width: 4.5rem;
     height: 0.3rem;
