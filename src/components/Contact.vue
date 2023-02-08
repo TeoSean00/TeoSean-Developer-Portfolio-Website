@@ -159,4 +159,19 @@ export default {
     transform: translateY(-2px);
     box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
 }
+@media only screen and (max-width: 410px) {
+    .formbutton{
+        color: hsl(204,23.8%,95.9%); 
+        font-family: Space Grotesk;
+        background-color: #fff;
+        background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
+        width: 25%;
+        font-size: 0.8rem !important ;
+        transition: 0.05s;
+    }
+    .formbutton:hover{
+        transform: translateY(-2px);
+        box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+    }
+}
 </style>

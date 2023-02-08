@@ -402,12 +402,26 @@ export default {
     transform: translateY(-2px);
     box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 390px){
     .projectbutton{
         color: #d4c0c0;
         background: #6b3030;
         transition: 0.5s;
         font-size: 0.75rem !important;
+        transition: 0.05s;
+    }
+    .projectbutton:hover{
+        transform: translateY(-2px);
+        box-shadow:3px 3px 30px 5px rgb(80 78 78 / 50%);
+    }    
+}
+
+@media only screen and (max-width: 355px){
+    .projectbutton{
+        color: #d4c0c0;
+        background: #6b3030;
+        transition: 0.5s;
+        font-size: 0.68rem !important;
         transition: 0.05s;
     }
     .projectbutton:hover{
