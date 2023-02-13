@@ -82,7 +82,7 @@
               <v-row>
                 <v-col cols="12" xs="12" sm="12" md="5">
                   <v-card-subtitle style="font-size: 1.2rem;" class="text-wrap">
-                    Full Stack Developer & Team Leader
+                    Full Stack Developer
                   </v-card-subtitle>
                 </v-col>
                 <v-col cols="12" xs="12" sm="12" md="7">
@@ -119,7 +119,7 @@
                   </li>
                   <li class="experiencelist">
                     Developed with Vue.js, CSS, Bootstrap, Ant Design, JavaScript, Firebase's Firestore & Realtime Database (database, querying,
-                    authentication) & deployed using Vercel, Website Link: <a href="https://sgxchange.vercel.app/" target="__blank" style="color: #9cc9e3">SGXchange.vercel.app</a>
+                    authentication) & deployed using Vercel, Website Link: <a href="https://smu-wad2-teosean-sgxchange.vercel.app/" target="__blank" style="color: #9cc9e3">SGXchange.vercel.app</a>
                   </li>
                 </ul>
               </v-card-text>

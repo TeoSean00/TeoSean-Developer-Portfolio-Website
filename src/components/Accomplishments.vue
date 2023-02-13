@@ -13,7 +13,7 @@
     <v-row>
         <!-- card1 -->
         <v-col cols="12" md="12" lg="6">
-          <v-card shaped class="experiencecard">
+          <v-card shaped class="experiencecard" href="https://www.imda.gov.sg/How-We-Can-Help/Singapore-Digital-Scholarship" target="__blank">
             <v-row>
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
@@ -52,7 +52,7 @@
 
         <!-- card2 -->
         <v-col cols="12" md="12" lg="6">
-          <v-card shaped class="experiencecard">
+          <v-card shaped class="experiencecard" href="https://scis.smu.edu.sg/programmes/undergraduate/students" target="__blank">
             <v-row>
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
@@ -104,7 +104,7 @@
       <v-row>
         <!-- card3 -->
         <v-col cols="12" md="12" lg="6">
-          <v-card shaped class="experiencecard">
+          <v-card shaped class="experiencecard" href="https://scis.smu.edu.sg/programmes/undergraduate/beyond/ace" target="__blank">
             <v-row>
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
@@ -140,7 +140,7 @@
 
         <!-- card4 -->  
         <v-col cols="12" md="12" lg="6">
-          <v-card shaped class="experiencecard">
+          <v-card shaped class="experiencecard" href="https://admissions.smu.edu.sg/financial-matters/financial-aid/smu-school-computing-and-information-systems-scis-achievements" target="__blank">
             <v-row>
               <v-col cols="12" xs="12" sm="7" md="9">
                 <v-row>
