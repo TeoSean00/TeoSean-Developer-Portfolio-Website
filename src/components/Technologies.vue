@@ -13,8 +13,9 @@
             </p>
           </v-col>
         </v-row>
-        <v-row class="mt-10">
-            <v-col cols="12" xs="12" sm="5" md="3" class="mr-3">
+        <v-row class="mt-10 mb-10">
+            <!-- Frontend Tech Stack -->
+            <v-col cols="12" xs="12" sm="6" md="5" lg="5">
                 <h4 class="subheaderfont">
                     Front-End
                 </h4>
@@ -33,8 +34,8 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-js-square</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        Bootstrap
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-bootstrap</v-icon>
+                        React
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-react</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         Vue.js
@@ -45,21 +46,26 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-vuejs</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        React
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-react</v-icon>
+                        Tailwind CSS
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-css3-alt</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        Vercel
-                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
+                        Bootstrap
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-bootstrap</v-icon>
                     </li>
-                    <li class="techlistitem">
-                        Github Pages
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
+                    <li class="techlistitem mb-2">
+                        Ant Design
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-wand-magic-sparkles</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Chart.js
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-chart-line</v-icon>
                     </li>
                 </ul>
             </v-col>
             
-            <v-col cols="12" xs="12" sm="5" md="3" class="mr-3">
+            <!-- Backend Tech Stack -->
+            <v-col cols="12" xs="12" sm="6" md="5" lg="6">
                 <h4 class="subheaderfont">
                     Back-End
                 </h4>
@@ -75,6 +81,10 @@
                     </li>
                     <li class="techlistitem mb-2">
                         MySQL
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        MongoDB
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
@@ -105,10 +115,41 @@
                         Streamlit
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
+                    <li class="techlistitem mt-1">
+                        Kong API Gateway
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
+                    </li>
                 </ul>
             </v-col>
 
-            <v-col cols="12" xs="12" sm="5" md="3">
+            <!-- DevOps Tech Stack -->
+            <v-col cols="12" xs="12" sm="6" md="5" lg="5" class="mt-1">
+                <h4 class="subheaderfont">
+                    DevOps
+                </h4>
+                <p class="pfont2 mb-1">Experience with:</p>
+                <ul class="techlist">
+                    <li class="techlistitem mb-2">
+                        Docker
+                        <v-icon left class="iconsize ml-1 mb-2 iconsize">fab fa-docker</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Github
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
+                    </li>
+                    <li class="techlistitem">
+                        Github Pages
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
+                    </li>
+                    <li class="techlistitem mt-2">
+                        Vercel
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
+                    </li>
+                </ul>
+            </v-col>
+
+            <!-- Design Tech Stack -->
+            <v-col cols="12" xs="12" sm="6" md="5" lg="6" class="mt-1">
                 <h4 class="subheaderfont">
                     Design
                 </h4>
