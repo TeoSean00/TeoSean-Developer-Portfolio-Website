@@ -1,6 +1,6 @@
 <template>
 <!-- Projects component -->
-<v-container fluid class="mt-16 px-10" id="projects">
+<v-container fluid class="mt-16 px-0" id="projects">
     <div class="componentdivider"></div>      
     <v-row>
       <v-col cols="8">
@@ -32,7 +32,7 @@
             </v-row>
             <v-row style="margin: 0;">
                 <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
-                    <v-card-text class="cardtext" style="padding-bottom: 0;">
+                    <v-card-text class="cardtext pb-0 px-0" >
                         A website designed to help students with the overseas exchange application process by 
                         web scraping and consolidating all the vital scatterered information, along with originally 
                         designed and self-built system functionalities such as automated modules mapping, user 
@@ -65,28 +65,6 @@
                     </ul>
                 </v-col>
             </v-row>
-            <!-- <v-row class="mx-0 mt-2">
-                <v-col cols="4" class="techstackitemright">
-                    Vue.js
-                </v-col>
-                <v-col cols="4" class="techstackitem">
-                    Javascript
-                </v-col>
-                <v-col cols="4" class="techstackitemleft">
-                    Firebase
-                </v-col>
-            </v-row>
-            <v-row class="mx-0 mt-4">
-                <v-col cols="4" class="techstackitemright">
-                    Ant Design
-                </v-col>
-                <v-col cols="4" class="techstackitem">
-                    Vercel
-                </v-col>
-                <v-col cols="4" class="techstackitemleft">
-                    Bootstrap
-                </v-col>
-            </v-row> -->
             <v-row class="mx-0 mt-3 mb-1">
                 <v-col cols="6" class="text-center">
                     <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/SMU-WAD2-SGXChange" target="_blank">
@@ -122,7 +100,7 @@
             </v-row>
             <v-row style="margin: 0;">
                 <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
-                    <v-card-text class="cardtext" style="padding-bottom: 0;">
+                    <v-card-text class="cardtext pb-0 px-0">
                         My first developer portfolio website that documents my journey in the software engineering realm thus far! It showcases my relevant
                         tech experience, projects, tech stacks, my developer timeline and accomplishments thus far.
                         Built primarily using Vue.js, Vuetify, CSS, Bootstrap, together with EmailJS and deployed via Github Pages with a 
@@ -151,28 +129,6 @@
                     </ul>
                 </v-col>
             </v-row>
-            <!-- <v-row class="mx-0 mt-2">
-                <v-col cols="4" class="techstackitemright">
-                    Vue.js
-                </v-col>
-                <v-col cols="4" class="techstackitem">
-                    Javascript
-                </v-col>
-                <v-col cols="4" class="techstackitemleft">
-                    Firebase
-                </v-col>
-            </v-row>
-            <v-row class="mx-0 mt-4">
-                <v-col cols="4" class="techstackitemright">
-                    Ant Design
-                </v-col>
-                <v-col cols="4" class="techstackitem">
-                    Vercel
-                </v-col>
-                <v-col cols="4" class="techstackitemleft">
-                    Bootstrap
-                </v-col>
-            </v-row> -->
             <v-row class="mx-0 mt-3 mb-1">
                 <v-col cols="6" class="text-center">
                     <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/TeoSean-Developer-Portfolio-Website" target="_blank">
@@ -211,7 +167,7 @@
               </v-row>
               <v-row style="margin: 0;">
                   <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
-                      <v-card-text class="cardtext" style="padding-bottom: 0;">
+                      <v-card-text class="cardtext pb-0 px-0">
                         My very first React and Solo Project. This project aims to create a movie catalogue by fetching movie data 
                         from an external api, "http://omdbapi.com/apikey.aspx". It then displays the 
                         relevant movies' poster picture, title, 
@@ -238,28 +194,6 @@
                       </ul>
                   </v-col>
               </v-row>
-              <!-- <v-row class="mx-0 mt-2">
-                  <v-col cols="4" class="techstackitemright">
-                      Vue.js
-                  </v-col>
-                  <v-col cols="4" class="techstackitem">
-                      Javascript
-                  </v-col>
-                  <v-col cols="4" class="techstackitemleft">
-                      Firebase
-                  </v-col>
-              </v-row>
-              <v-row class="mx-0 mt-4">
-                  <v-col cols="4" class="techstackitemright">
-                      Ant Design
-                  </v-col>
-                  <v-col cols="4" class="techstackitem">
-                      Vercel
-                  </v-col>
-                  <v-col cols="4" class="techstackitemleft">
-                      Bootstrap
-                  </v-col>
-              </v-row> -->
               <v-row class="mx-0 mt-3 mb-1">
                   <v-col cols="6" class="text-center">
                       <v-btn class="projectbutton text-none text-wrap" href="https://github.com/TeoSean00/React-First-Project-Movie-Application" target="_blank">
@@ -302,10 +236,6 @@ export default {
 .headerfont{
   font-size: 3.5rem;
 }
-.pfont{
-  color: rgb(133, 137, 163);
-  font-size: 1.3rem;
-}
 .button{
     color: hsl(204,23.8%,95.9%); 
     font-family: Space Grotesk;
@@ -334,7 +264,7 @@ export default {
     .cardtitle{
         color: #9cc9e3;
         text-align: center;
-        font-size: 1rem !important;
+        font-size: 1.4rem !important;
         padding: 0;
     }
   }
@@ -353,12 +283,12 @@ export default {
 @media only screen and (max-width: 398px) {
     .cardtext{
         text-align: justify;
-        font-size: 0.8rem !important;
+        font-size: 1.1rem !important;
     }
 }
 .cardtechstack{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #9cc9e3;
     padding-top: 1.1rem;
     padding-bottom: 1rem;
@@ -373,23 +303,11 @@ export default {
 }
 .techstackitem{
     display: inline;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #d8bfbf;
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 0;
-}
-.techstackitemright{
-    font-size: 1rem;
-    color: #d8bfbf;
-    text-align: right;
-    padding: 0;
-}
-.techstackitemleft{
-    font-size: 1rem;
-    color: #d8bfbf;
-    text-align: left;
-    padding: 0;
 }
 .projectbutton{
     color: #d4c0c0;

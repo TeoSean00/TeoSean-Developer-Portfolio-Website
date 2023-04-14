@@ -1,9 +1,9 @@
 <template>
   <v-app id="home">
-    <v-container fluid class="main">
+    <v-container fluid class="main" style="padding-left:24px; padding-right:24px;">
       <!-- Navbar component -->
       <NavBar />
-        <v-container style="max-width: 1325px;">
+        <v-container style="max-width: 1325px; padding-left:0px; padding-right:0px;">
           <!-- Head/Welcome component -->
           <WelcomeHead />
           <!-- Experience component -->
@@ -60,7 +60,7 @@ export default defineComponent({
     Accomplishments,
     Contact,
     FooterView,
-  },
+},
 });
 </script>
 

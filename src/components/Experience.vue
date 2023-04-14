@@ -1,6 +1,6 @@
 <template>
 <!-- Experience component -->
-<v-container fluid class="mt-16 px-10" id="experience">
+<v-container fluid class="mt-16 px-0" id="experience">
     <div class="componentdivider"></div>      
     <v-row>
       <v-col cols="8">
@@ -160,7 +160,7 @@ export default{
 @media only screen and (max-width: 341px) {
   .experiencelist{
     margin-bottom: 0.75em;
-    font-size: 0.95rem !important;
+    font-size: 1.1rem !important;
   }
 }
 </style>

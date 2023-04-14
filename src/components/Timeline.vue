@@ -1,6 +1,6 @@
 <template>
     <!-- Timeline component -->
-    <v-container fluid class="mt-16 px-10" id="timeline">
+    <v-container fluid class="mt-16 px-0" id="timeline">
     <div class="componentdivider"></div>      
     <v-row>
         <v-col cols="8">
@@ -101,11 +101,11 @@ export default {
 @media only screen and (max-width: 390px) {
   .monthtext{
     color: rgb(133, 137, 163);
-    font-size: 0.85rem !important;
+    font-size: 0.9rem !important;
   }
   .month{
     color: rgb(133, 137, 163);
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
 }
 .componentdivider{
@@ -125,10 +125,6 @@ export default {
 }
 .subheaderfont{
   font-size: 1.85rem;
-}
-.pfont{
-  color: rgb(133, 137, 163);
-  font-size: 1.3rem;
 }
 .button{
     color: hsl(204,23.8%,95.9%); 

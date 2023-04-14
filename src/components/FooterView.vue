@@ -44,10 +44,6 @@ export default {
 .headerfont{
   font-size: 3.5rem;
 }
-.pfont{
-  color: rgb(133, 137, 163);
-  font-size: 1.3rem;
-}
 .footerfont{
     font-size: 1.1rem;
     color: rgb(133, 137, 163);

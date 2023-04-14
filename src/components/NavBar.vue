@@ -101,7 +101,7 @@ export default {
         },
         onResize () {
             this.drawermed = window.innerWidth < 1180
-      },
+        },
         onResizeSmall () {
             this.drawersmall = window.innerWidth < 835
         },

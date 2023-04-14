@@ -1,15 +1,15 @@
 <template>
       <!-- Technologies component -->
-      <v-container fluid class="mt-16 px-10" id="technologies">
+      <v-container fluid class="mt-16 px-0" id="technologies" style="padding-bottom: 0;">
         <div class="componentdivider"></div>      
         <v-row>
           <v-col cols="8">
             <h1 class="headerfont">
               Technologies
             </h1>
-            <p class="pfont">
-              I have worked with a range of technologies in the Web Development world thus far. 
-              From Back-End to Front-End to Full-Stack Development with a hint of Design Thinking as well.
+            <p class="pfonttech">
+              I have worked with a range of technologies in the Software Development realm thus far. 
+              From Back-End to Front-End to Full-Stack Development, along with DevOps and Design Thinking as well.
             </p>
           </v-col>
         </v-row>
@@ -21,20 +21,12 @@
                 </h4>
                 <p class="pfont2 mb-1">Experience with:</p>
                 <ul class="techlist">
-                    <li class="techlistitem mb-2 mb-1">
-                        HTML
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-html5</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
-                        CSS
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-css3-alt</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
-                        Javascript
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-js-square</v-icon>
-                    </li>
                     <li class="techlistitem mb-2">
                         React
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-react</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Next.js
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-react</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
@@ -44,6 +36,18 @@
                     <li class="techlistitem mb-2">
                         Vuetify
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-vuejs</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Javascript
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-js-square</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2 mb-1">
+                        HTML
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-html5</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        CSS
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-css3-alt</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         Tailwind CSS
@@ -80,6 +84,10 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-java</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
+                        PHP
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-php</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
                         MySQL
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
                     </li>
@@ -111,12 +119,16 @@
                         Openpyxl
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
-                    <li class="techlistitem">
+                    <li class="techlistitem mb-2">
                         Streamlit
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
-                    <li class="techlistitem mt-1">
+                    <li class="techlistitem mb-2">
                         Kong API Gateway
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        RabbitMQ
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
                     </li>
                 </ul>
@@ -137,12 +149,16 @@
                         Github
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
                     </li>
-                    <li class="techlistitem">
+                    <li class="techlistitem mb-2">
                         Github Pages
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
                     </li>
-                    <li class="techlistitem mt-2">
+                    <li class="techlistitem mb-2">
                         Vercel
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Netlify
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
                     </li>
                 </ul>
@@ -160,11 +176,15 @@
                         <v-icon left class="iconsize ml-1 mb-2 iconsize">fab fa-figma</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        Maze Testing
+                        Canva
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-pen-ruler</v-icon>
                     </li>
-                    <li class="techlistitem">
-                        Canva
+                    <li class="techlistitem mb-2">
+                        Excalidraw
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-pen-ruler</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Maze Testing
                         <v-icon left class="ml-1 mb-2 iconsize">fas fa-pen-ruler</v-icon>
                     </li>
                 </ul>
@@ -199,12 +219,12 @@ export default {
 .subheaderfont{
   font-size: 1.85rem;
 }
-.pfont{
+.pfonttech{
   color: rgb(133, 137, 163);
   font-size: 1.3rem;
 }
 @media only screen and (max-width: 390px){
-    .pfont{
+    .pfonttech{
       font-size: 1.1rem !important;
     }
 }  

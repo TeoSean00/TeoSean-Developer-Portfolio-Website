@@ -1,6 +1,6 @@
 <template>
     <!-- Contact component -->
-    <v-container fluid class="mt-16 px-10" id="contact">
+    <v-container fluid class="mt-16 px-0" id="contact">
     <div class="componentdivider"></div>
     <v-row>
         <v-col cols="8">
@@ -29,7 +29,7 @@
             <v-col cols="12" md="9">
                 <h1 class="subheaderfont2">Send your message</h1>
                 <v-divider></v-divider>
-                <span class="pfont">
+                <span class="pfontcontact">
                     Feel free to drop me a message regarding anything under the sun (opportunities, networking, collaboration,
                     hobbies) !
                 </span>
@@ -57,17 +57,6 @@
         </v-col>
     </v-row>
     </v-container>
-    <!-- <form ref="form" @submit.prevent="sendEmail">
-        <label>Name</label>
-        <input type="text" name="sender_name" style="color: white;">
-        <label>Organisation</label>
-        <input type="text" name="sender_org" style="color: white;">
-        <label>Email</label>
-        <input type="email" name="sender_email" style="color: white;">
-        <label>Message</label>
-        <textarea name="sender_message" style="color: white;"></textarea>
-        <input type="submit" value="Send" style="color: white;">
-      </form> -->
 </template>
 
 <script>
@@ -108,6 +97,15 @@ export default {
 </script>
 
 <style>
+.pfontcontact{
+    color: rgb(133, 137, 163);
+    font-size: 1.3rem;
+}
+@media only screen and (max-width: 600px){
+    .pfontcontact{
+      font-size: 1.1rem !important;
+    }
+  }
 .componentdivider{
     width: 4.5rem;
     height: 0.3rem;
@@ -129,13 +127,9 @@ export default {
 .subheaderfont2{
     font-size: 2rem;
 }
-.pfont{
-  color: rgb(133, 137, 163);
-  font-size: 1.3rem;
-}
 .linkfont{
   color: rgb(133, 137, 163);
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: Space Grotesk;
 }
 .button{
