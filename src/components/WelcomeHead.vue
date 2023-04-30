@@ -1,7 +1,7 @@
 <template>
 <!-- Head/Welcome component -->
 <v-container fluid class="mt-16 px-0" id="about">
-    <v-row>
+    <!-- <v-row>
       <v-col cols="12" style="padding-top:12px; padding-bottom:0;">
         <div class="container" style="display:inline-block; max-width: 100%;">
           <h1 class="typewriter mb-2">
@@ -9,11 +9,16 @@
           </h1>  
         </div>
       </v-col>
-    </v-row>
+    </v-row> -->
     <v-row>
-      <v-col cols="12" md="8">
-        <p class="pfont mb-8">
-          Hello! I am Teo Sean, an aspiring Full Stack Developer. 
+      <v-col cols="12" md="8" class="py-0" style="padding-right: 12px;">
+        <div class="container" style="display:inline-block; max-width: 100%;">
+          <h1 class="typewriter mb-7">
+            Hi there, Welcome to my Developer Portfolio!
+          </h1>  
+        </div>
+        <p class="pfont mb-7">
+          I am Teo Sean, an aspiring Full Stack Developer. 
           I am passionate about building products that bring about meaning, benefits and a positive impact on the users that use them.
         </p>
         <p class="pfont">
@@ -22,7 +27,7 @@
           by clicking on the Contact button in the navbar 😎, thank you for your time!             
         </p>
       </v-col>
-      <v-col cols="12" sm="7" md="4" style="display: flex; flex-direction: column; justify-content: center; text-align:left">
+      <v-col cols="12" sm="12" md="4" class="image-col" style="display: flex; flex-direction: column; justify-content: center; text-align:left">
         <v-img src="@/assets/profilepic2.jpg" class="image"></v-img>
       </v-col>
     </v-row>
@@ -68,41 +73,79 @@ export default {
   from {width: 0}
   to {width: 100%}
 }
-@media (max-width: 1300px) {
+@media (max-width: 1380px) {
   .typewriter{
+    font-size: 2.4rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 1310px) {
+  .typewriter{
+    font-size: 2.2rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 1205px) {
+  .typewriter{
+    font-size: 2rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 1125px) {
+  .typewriter{
+    font-size: 1.9rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 1050px) {
+  .typewriter{
+    font-size: 1.75rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 975px) and (min-width: 960px) {
+  .typewriter{
+    font-size: 1.65rem !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 3.5s steps(44) 1;
+  }
+}
+@media (max-width: 960px) {
+  .typewriter {
     font-size: 2.3rem;
     width: 100%;
-    white-space: nowrap;
     overflow: hidden;
     animation:
       typing 3.5s steps(44) 1;
   }
 }
-@media (max-width: 1210px) {
-  .typewriter{
-    font-size: 2.1rem;
+@media (max-width: 860px) {
+  .typewriter {
+    font-size: 2rem;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-      typing 3.5s steps(44) 1;
-  }
-}
-@media (max-width: 1132px) {
-  .typewriter{
-    font-size: 1.95rem;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-      typing 3.5s steps(44) 1;
-  }
-}
-@media (max-width: 1040px) {
-  .typewriter{
-    font-size: 1.85rem;
-    width: 100%;
-    white-space: nowrap;
     overflow: hidden;
     animation:
       typing 3.5s steps(44) 1;
@@ -117,25 +160,16 @@ export default {
       typing 3.5s steps(44) 1;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 685px) {
   .typewriter {
-    font-size: 1.6rem;
+    font-size: 1.58rem;
     width: 100%;
     overflow: hidden;
     animation:
       typing 3.5s steps(44) 1;
   }
 }
-@media (max-width: 610px) {
-  .typewriter {
-    font-size: 1.5rem;
-    width: 100%;
-    overflow: hidden;
-    animation:
-      typing 3.5s steps(44) 1;
-  }
-}
-@media (max-width: 580px) {
+@media (max-width: 595px) {
   .typewriter {
     font-size: 1.5rem;
     width: 100%;
@@ -179,24 +213,43 @@ export default {
     font-size: 1.1rem !important;
   }
 }
-@media only screen and (max-width:960px) {
-  .v-img__img--contain{
-    object-position: left !important;
-  }
-}
 .image{
   height: 100%;
   width: 100%;
   text-align: center;
-  max-height: 315px;
+  max-height: 390px;
 }
-.animation{
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+@media only screen and (max-width:960px) {
+  .v-img__img--contain{
+    object-fit: cover;
+    object-position: center;
+  }
+  .image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .image-col {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .v-img__img--contain{
+    object-fit: cover;
+    object-position: center;
+  }
+  .image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .image-col {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 .button{
   color: hsl(204,23.8%,95.9%); 
