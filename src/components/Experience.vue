@@ -35,9 +35,8 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;">
-              <v-img src="@/assets/imdalogo.png"
-                style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2em;"></v-img>
+            <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center; width: 100%;">
+              <v-img src="@/assets/imdalogo.png" class="experienceimage"></v-img>
             </v-col>
           </v-row>
           <v-row class="mt-2">
@@ -93,8 +92,7 @@
               </v-row>
             </v-col>
             <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;">
-              <v-img src="@/assets/smuscislogo.png"
-                style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2em;"></v-img>
+              <v-img src="@/assets/smuscislogo.png" class="experienceimage"></v-img>
             </v-col>
           </v-row>
           <v-row class="mt-2">
@@ -156,6 +154,21 @@ export default{
 }
 .experiencelist{
   margin-bottom: 0.75em;
+}
+.experienceimage{
+  height: 100%; 
+  width: 100%; 
+  margin-top: 0.5em; 
+  padding-right: 2em;
+}
+@media only screen and (max-width: 960px) {
+  .experienceimage{
+    height: auto; 
+    width: 100%; 
+    max-width: 100%; 
+    margin-top: 0.5em; 
+    padding-right: 2em;
+  }
 }
 @media only screen and (max-width: 341px) {
   .experiencelist{

@@ -32,8 +32,7 @@
                 </v-row>
               </v-col>
               <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;" class="text-wrap">
-                <v-img src="@/assets/imdalogo.png"
-                  style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2em;"></v-img>
+                <v-img src="@/assets/imdalogo.png" class="accomplishmentimage"></v-img>
               </v-col>
             </v-row>
             <v-row class="mt-3">
@@ -71,8 +70,7 @@
                 </v-row>
               </v-col>
               <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;">
-                <v-img src="@/assets/smuscislogo.png"
-                  style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2.5em;"></v-img>
+                <v-img src="@/assets/smuscislogo.png" class="accomplishmentimage"></v-img>
               </v-col>
             </v-row>
             <v-row class="mt-3">
@@ -123,8 +121,7 @@
                 </v-row>
               </v-col>
               <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;">
-                <v-img src="@/assets/smuscislogo.png"
-                  style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2em;"></v-img>
+                <v-img src="@/assets/smuscislogo.png" class="accomplishmentimage"></v-img>
               </v-col>
             </v-row>
             <v-row class="mt-3">
@@ -159,8 +156,7 @@
                 </v-row>
               </v-col>
               <v-col cols="12" xs="12" sm="5" md="3" style="display: flex; align-items: center;">
-                <v-img src="@/assets/smuscislogo.png"
-                  style="height: 100%; width: 100%; margin-top: 0.5em; padding-right: 2em;"></v-img>
+                <v-img src="@/assets/smuscislogo.png" class="accomplishmentimage"></v-img>
               </v-col>
             </v-row>
             <v-row class="mt-3">
@@ -191,47 +187,23 @@ export default {
 .cardtitle{
   font-size: 1rem;
 }
-
-.componentdivider{
-    width: 4.5rem;
-    height: 0.3rem;
-    border-radius: 10px;
-    background-color: #fff;
-    background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
-}
-.main{
-    background-color: #0F1624; 
-    color: hsl(204,23.8%,95.9%); 
-    font-family: Space Grotesk;
-  }
-.headerfont{
-  font-size: 3.5rem;
-}
-.subheaderfont{
-  font-size: 1.85rem;
-}
-.button{
-    color: hsl(204,23.8%,95.9%); 
-    font-family: Space Grotesk;
-    font-size: 1.3rem;
-    background-color: #fff;
-    background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
-    width: 100%;
-}
-.experiencecard{
-  width: 100%;
-  height: 100%;
-  color: hsl(204,23.8%,95.9%); 
-  font-family: Space Grotesk;
-  background-color: #0F1624;
-  box-shadow:3px 3px 20px 5px rgb(80 78 78 / 50%);
-  padding: 0.8rem;
-}
-.experiencelist{
-  margin-bottom: 0.75em;
-}
 .listaccomplishment{
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+}
+.accomplishmentimage{
+  height: 100%; 
+  width: 100%; 
+  margin-top: 0.5em; 
+  padding-right: 2em;
+}
+@media only screen and (max-width: 960px) {
+  .accomplishmentimage{
+    height: auto; 
+    width: 90% !important; 
+    max-width: 100%; 
+    margin-top: 0.5em; 
+    padding-right: 2em;
+  }
 }
 </style>

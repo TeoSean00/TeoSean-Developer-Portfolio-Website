@@ -38,6 +38,10 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-vuejs</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
+                        Typescript
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-code</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
                         Javascript
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-js-square</v-icon>
                     </li>
@@ -88,18 +92,6 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-php</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
-                        MySQL
-                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
-                        MongoDB
-                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
-                        NoSQL Firebase
-                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
                         Flask Framework
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
@@ -109,6 +101,10 @@
                     </li>
                     <li class="techlistitem mb-2">
                         SQLAlchemy
+                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        PyMongo
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
@@ -122,6 +118,22 @@
                     <li class="techlistitem mb-2">
                         Streamlit
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        MySQL
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        MongoDB
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        NoSQL Firebase
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        Postman API Platform
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-desktop</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         Kong API Gateway
@@ -142,15 +154,15 @@
                 <p class="pfont2 mb-1">Experience with:</p>
                 <ul class="techlist">
                     <li class="techlistitem mb-2">
+                        Kubernetes
+                        <v-icon left class="iconsize ml-1 mb-2">fas fa-gear</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
                         Docker
-                        <v-icon left class="iconsize ml-1 mb-2 iconsize">fab fa-docker</v-icon>
+                        <v-icon left class="iconsize ml-1 mb-2">fab fa-docker</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         Github
-                        <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
-                    </li>
-                    <li class="techlistitem mb-2">
-                        Github Pages
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-github</v-icon>
                     </li>
                     <li class="techlistitem mb-2">

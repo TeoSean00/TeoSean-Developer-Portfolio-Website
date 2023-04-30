@@ -60,13 +60,16 @@ export default {
 .headerfont{
   font-size: 3.5rem;
 }
+/*for gradient text effect: background-image: linear-gradient(45deg, hsl(0, 0%, 50%), hsl(0, 0%, 100%));
+background-clip: text;
+color: transparent;*/
 .typewriter{
   font-size: 2.55rem;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   animation:
-    typing 3.5s steps(44) 1;
+    typing 3.7s steps(44) 1;
 }
 /* typing effect */
 @keyframes typing {
