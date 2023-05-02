@@ -2,7 +2,7 @@
 
 My first developer portfolio website that documents my journey in the software engineering realm thus far! It showcases my relevant tech experience, projects, tech stacks, my developer timeline and accomplishments thus far. 
 <br><br>
-Built using Vue.js, Vuetify, EmailJS, Javascript, CSS, Bootstrap along with HTML, and deployed via Github Pages with a custom personal domain, a CONSTANT work in progress!
+Built using Vue.js, Vuetify, EmailJS, Javascript, CSS, Bootstrap along with HTML, and deployed via Github Pages with a custom personal domain, a constant work in progress!
 
 
 ## Find the website LIVE at https://teosean.me/
