@@ -3,7 +3,7 @@
       <v-container fluid class="mt-16 px-0" id="technologies" style="padding-bottom: 0;">
         <div class="componentdivider"></div>      
         <v-row>
-          <v-col cols="8">
+          <v-col cols="12" sm="10" md="8">
             <h1 class="headerfont">
               Technologies
             </h1>
@@ -32,6 +32,10 @@
                     <li class="techlistitem mb-2">
                         Vue.js
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-vuejs</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        tRPC
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-circle-nodes</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         Vuetify
@@ -100,6 +104,10 @@
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-java</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
+                        Prisma
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-code</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
                         SQLAlchemy
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
                     </li>
@@ -118,6 +126,10 @@
                     <li class="techlistitem mb-2">
                         Streamlit
                         <v-icon left class="ml-1 mb-2 iconsize">fab fa-python</v-icon>
+                    </li>
+                    <li class="techlistitem mb-2">
+                        PlanetScale
+                        <v-icon left class="ml-1 mb-2 iconsize">fas fa-database</v-icon>
                     </li>
                     <li class="techlistitem mb-2">
                         MySQL

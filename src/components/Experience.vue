@@ -1,6 +1,6 @@
 <template>
 <!-- Experience component -->
-<v-container fluid class="mt-16 px-0" id="experience">
+<v-container fluid class="mt-8 px-0" id="experience">
     <div class="componentdivider"></div>      
     <v-row>
       <v-col cols="8">

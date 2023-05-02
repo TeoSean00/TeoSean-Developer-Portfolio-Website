@@ -1,29 +1,20 @@
 <template>
 <!-- Head/Welcome component -->
 <v-container fluid class="mt-16 px-0" id="about">
-    <!-- <v-row>
-      <v-col cols="12" style="padding-top:12px; padding-bottom:0;">
-        <div class="container" style="display:inline-block; max-width: 100%;">
-          <h1 class="typewriter mb-2">
-            Hi there, Welcome to my Developer Portfolio!
-          </h1>  
-        </div>
-      </v-col>
-    </v-row> -->
-    <v-row>
+    <v-row class="mb-1">
       <v-col cols="12" md="8" class="py-0" style="padding-right: 12px;">
         <div class="container" style="display:inline-block; max-width: 100%;">
-          <h1 class="typewriter mb-7">
+          <h1 class="typewriter pb-7">
             Hi there, Welcome to my Developer Portfolio!
           </h1>  
         </div>
-        <p class="pfont mb-7">
-          I am Teo Sean, an aspiring Full Stack Developer. 
+        <p class="pfont pb-8">
+          I am <strong><em>Teo Sean, an aspiring Full Stack Developer.</em></strong>
           I am passionate about building products that bring about meaning, benefits and a positive impact on the users that use them.
         </p>
         <p class="pfont">
           Feel free to take a look at my portfolio and do not hesitate to connect with me via any of my socials in the
-          NavBar! Alternatively, you may drop me an email for anything under the sun 
+          navbar! Alternatively, you may drop me an email for anything under the sun 
           by clicking on the Contact button in the navbar 😎, thank you for your time!             
         </p>
       </v-col>
@@ -31,10 +22,22 @@
         <v-img src="@/assets/profilepic2.jpg" class="image"></v-img>
       </v-col>
     </v-row>
-    <v-row>
+    <!-- <v-row>
       <v-col cols="12" md="8">
         <v-btn text @click="scroll('experience')" class="text-none text-wrap button">Find out more!</v-btn>
       </v-col>
+    </v-row> -->
+    <v-row class="mt-4">
+        <div id="mouse-scroll" :class="{ 'hidden': showArrow }">
+          <div class="mouse">
+            <div class="mouse-in"></div>
+          </div>
+          <div>
+            <span class="down-arrow-1"></span>
+            <span class="down-arrow-2"></span>
+            <span class="down-arrow-3"></span>
+          </div>
+        </div>   
     </v-row>
 </v-container>
 </template>
@@ -42,16 +45,42 @@
 <script>
 import "@fontsource/space-grotesk";
 export default {
+  data() {
+    return {
+      showArrow: false,
+      lastScrollTop: 0
+    };
+  },
   methods: {
       scroll(name) {
           const element = document.getElementById(name);
           element.scrollIntoView({behavior: 'smooth'});
       },
+      onScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > this.lastScrollTop) {
+          // Scrolling down
+          this.showArrow = true;
+        } else {
+          // Scrolling up
+          this.showArrow = false;
+        }
+        this.lastScrollTop = scrollTop;
+      } 
+  },
+  mounted() {
+      window.addEventListener('scroll', this.onScroll);
+  },
+  unmounted() {
+      window.removeEventListener('scroll', this.onScroll);
   },
 }
 </script>
 
 <style>
+#about {
+
+}
 .main{
     background-color: #0F1624; 
     color: hsl(204,23.8%,95.9%); 
@@ -69,7 +98,7 @@ color: transparent;*/
   white-space: nowrap;
   overflow: hidden;
   animation:
-    typing 3.7s steps(44) 1;
+    typing 3.5s steps(44) 1;
 }
 /* typing effect */
 @keyframes typing {
@@ -220,14 +249,14 @@ color: transparent;*/
   height: 100%;
   width: 100%;
   text-align: center;
-  max-height: 390px;
+  max-height: 385px;
 }
 @media only screen and (max-width:960px) {
   .v-img__img--contain{
     object-fit: cover;
     object-position: center;
   }
-  .image {
+  .image{
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -276,6 +305,107 @@ color: transparent;*/
     background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
     width: 100%;
     transition: 0.05s;
+  }
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+#mouse-scroll {
+  display: block;
+  margin: auto;
+  z-index: 100;
+  width: 100%;
+  transition: opacity 1.5s ease-in-out;
+}
+@media screen and (max-width: 960px) {
+  #mouse-scroll {
+    display: block;
+    margin: auto;
+    z-index: 100;
+    width: 100%;
+    transition: opacity 2s ease-in-out;
+  }  
+}
+#mouse-scroll span{
+  display: block;
+  width: 12px; 
+  height: 12px;
+  transform: rotate(45deg);
+  border-right: 2px solid #fff; 
+  border-bottom: 2px solid #fff;
+  margin: auto;
+}
+#mouse-scroll .mouse {
+  height: 52px;
+  width: 38px;
+  border-radius: 10px;
+  transform: none;
+  margin: auto;
+  border: 2px solid #ffffff;
+  top: 170px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite; 
+}
+#mouse-scroll .down-arrow-1 {
+   animation-delay: .1s; 
+   animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  animation-delay: .2s; 
+  animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+   animation-delay: .3s;
+   -moz-animation-dekay: .3s;
+   animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 12px;
+  width: 3px;
+  display: block; 
+  margin: 7px auto;
+  background: #ffffff;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+  animation: animated-mouse 1.4s ease infinite;
+}
+
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>

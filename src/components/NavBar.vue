@@ -1,6 +1,11 @@
 <template>
     <!-- For the dynamic and responsive Navbar -->
-    <v-app-bar class="px-4" style="background-color: #0F1624; font-family: Space Grotesk; color: hsl(204,23.8%,95.9%);">
+    <v-app-bar
+        id="navbar" 
+        class="px-4" 
+        style="z-index: 999; position: fixed; background-color: #0F1624; font-family: Space Grotesk; color: hsl(204,23.8%,95.9%);"
+        :class="{ 'hideNavbar': showNavbar }"
+    >
         <v-app-bar-nav-icon class="mb-1" @click="openList()" v-if="drawersmall"></v-app-bar-nav-icon>
         <v-btn text @click="scroll('home')" v-if="!drawermed" class="text-none navbarfont mr-n2">
             <v-icon color="white" left class="mr-2 mb-1">fas fa-signature</v-icon>Sean
@@ -27,7 +32,13 @@
     </v-app-bar>
 
     <!-- For the navigational drawer when the hamburger icon is clicked, where hamburger icon appears only when past a certain screen size small enough -->
-    <v-navigation-drawer v-model="openlist" temporary style="background-color: #0F1624; font-family: Space Grotesk; color: hsl(204,23.8%,95.9%); z-index: 1000; font-size: 15.5px;">
+    <v-navigation-drawer 
+        id="hamburger-drawer"
+        v-model="openlist" 
+        temporary 
+        style="position: fixed; background-color: #0F1624; font-family: Space Grotesk; color: hsl(204,23.8%,95.9%); z-index: 1000; font-size: 15.5px;"
+        :class="{ 'hideNavbar': showNavbar }"
+    >
         <v-list density="compact" nav style="z-index: 1000">
             <v-list-item @click="scroll('home')" style="background-color: #0F1624; font-size: 15.5px;">
                 <v-icon left class="mr-3 mb-2">fas fa-signature</v-icon>Sean
@@ -65,6 +76,13 @@
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
+
+    <!-- potential pointing up chevron to indicate navbar disappear -->
+    <!-- <div id="navbar1-scroll" :class="{ 'hideNavbar': showNavbar }">
+        <span class="down-arrow-1"></span>
+        <span class="down-arrow-2"></span>
+    </div>    -->
+
 </template>
 
 <script>
@@ -76,6 +94,8 @@ export default {
             drawermed: false,
             drawersmall: false,
             drawersmallmed: false,
+            showNavbar: false,
+            lastScrollTop: 0,
         }
     },
     beforeUnmount () {
@@ -93,8 +113,23 @@ export default {
       window.addEventListener('resize', this.onResize, { passive: true })
       window.addEventListener('resize', this.onResizeSmall, { passive: true })
       window.addEventListener('resize', this.onResizeSmallMed, { passive: true })
+      window.addEventListener('scroll', this.onScroll);
+    },
+    unmounted() {
+      window.removeEventListener('scroll', this.onScroll);
     },
     methods: {
+        onScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > this.lastScrollTop) {
+            // Scrolling down
+            this.showNavbar = true;
+            } else {
+            // Scrolling up
+            this.showNavbar = false;
+            }
+            this.lastScrollTop = scrollTop;
+        },
         scroll(name) {
             const element = document.getElementById(name);
             element.scrollIntoView({behavior: 'smooth'});
@@ -123,4 +158,93 @@ export default {
 .navbarfont{
     font-size: 0.95rem;
 }
+.hideNavbar {
+    opacity: 0;
+    pointer-events: none;
+} 
+#navbar, #hamburger-drawer {
+    transition: opacity 1.5s ease-in-out;
+}
+/*
+#navbar1-scroll {
+    display: block;   
+    margin: auto;
+    z-index: 999;
+    width: 100%;
+    transition: opacity 1.3s ease-in-out;
+    margin-top: 65px;
+}
+#navbar1-scroll span{
+    display: block;
+    width: 14px; 
+    height: 14px;
+    transform: rotate(225deg);
+    border-right: 2px solid #fff; 
+    border-bottom: 2px solid #fff;
+    margin: auto;
+}
+#navbar1-scroll .down-arrow-1 {
+margin-top: 6px;
+}
+#navbar1-scroll .down-arrow-1, #navbar1-scroll .down-arrow-2, #navbar1-scroll .down-arrow-3 {
+animation: navbar1-scroll 1s infinite; 
+}
+#navbar1-scroll .down-arrow-1 {
+    animation-delay: .1s; 
+    animation-direction: alternate;
+}
+#navbar1-scroll .down-arrow-2 {
+animation-delay: .2s; 
+animation-direction: alternate;
+}
+#navbar1-scroll .down-arrow-3 {
+    animation-delay: .3s;
+    -moz-animation-dekay: .3s;
+    animation-direction: alternate;
+}
+#navbar1-scroll .navbar1-in {
+height: 12px;
+width: 3px;
+display: block; 
+margin: 7px auto;
+background: #ffffff;
+position: relative;
+}
+#navbar1-scroll .navbar1-in {
+animation: animated-navbar1 1.4s ease infinite;
+}
+
+@keyframes animated-navbar1 {
+0% {
+    opacity: 1;
+    transform: translateY(0);
+}
+100% {
+    opacity: 0;
+    transform: translateY(6px);
+}
+}
+@keyframes navbar1-scroll {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: .5;
+}
+100% {
+    opacity: 1;
+} 
+}
+@keyframes navbar1-scroll {
+0% {
+    opacity: 0;
+}
+50% {
+    opacity: 0.5;
+}
+100% {
+    opacity: 1;
+}
+}
+*/
 </style>

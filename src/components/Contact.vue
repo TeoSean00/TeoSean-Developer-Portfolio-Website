@@ -15,6 +15,7 @@
             <v-col cols="12" md="3">
                 <div>
                     <h1 class="subheaderfont2">Contact Info</h1>
+                    <span class="linkfont">Click on the icons to be redirected!</span><br />
                     <v-btn icon="fab fa-github" class="mt-10 text-center" variant="outlined" href="https://github.com/TeoSean00/" target="_blank"></v-btn><br />
                     <span class="linkfont">github.com/TeoSean00</span><br />
             
@@ -30,8 +31,8 @@
                 <h1 class="subheaderfont2">Send your message</h1>
                 <v-divider></v-divider>
                 <span class="pfontcontact">
-                    Feel free to drop me a message regarding anything under the sun (opportunities, networking, collaboration,
-                    hobbies) !
+                    Feel free to drop me a message regarding anything under the sun (collaboration, opportunities, networking
+                    hobbies), I look forward to receiving them!
                 </span>
                 <form ref="form" @submit.prevent="sendEmail">
                     <v-row class="mt-5">
@@ -81,7 +82,7 @@ export default {
                     location.reload();
                 }, 500);
             }, (error) => {
-                alert('Unfortunately, the sending of the message is unsuccessful, it will be looked into immediately. For other methods of communication, please feel free to tap on the various contact icons on the left instead :)')
+                alert('Unfortunately, the sending of the message is unsuccessful, it will be looked into immediately. For other methods of communication, please feel free to click on the various social icons instead!')
                 console.log('FAILED', error.text);
             });
         }
