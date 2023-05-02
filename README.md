@@ -5,7 +5,7 @@ My first developer portfolio website that documents my journey in the software e
 Built using Vue.js, Vuetify, EmailJS, Javascript, CSS, Bootstrap along with HTML, and deployed via Github Pages with a custom personal domain, a CONSTANT work in progress!
 
 
-## Find the website LIVE on https://teosean.me/
+## Find the website LIVE at https://teosean.me/
 
 ## Project setup
 ```
@@ -17,7 +17,7 @@ npm install
 npm run serve
 ```
 
-## To deploy onto github pages once development is done
+## To deploy onto github pages once development is done, via a build and deploy script
 ```
 npm run deploy
 ```
@@ -31,6 +31,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
