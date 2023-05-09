@@ -52,7 +52,7 @@ export default {
         },
         {
           year: '2022 May',
-          text: 'Embarked on my first Full Stack Developer Internship at Infocomm Media Development Authority (IMDA) for 7 months'
+          text: 'Embarked on my first Full Stack Developer Internship at Infocomm Media Development Authority (IMDA) for 8 months'
         },
         {
           year: '2022 Aug',
@@ -64,11 +64,19 @@ export default {
         },
         {
           year: '2022 Nov',
-          text: 'Completed my first major school development project, titled \'SGXchange\' by collaborating and brainstorming with some friends. Developed with primarily Vue.js & Firebase with multiple external APIs, and it received notable feedbacks from the professors and achieved the highest score'
+          text: 'Completed my first major school development project, titled \'SGXChange\' by collaborating and brainstorming with some friends. Developed with primarily Vue.js & Firebase with multiple external APIs, and it received notable feedbacks from the professors and achieved the highest grade too'
         },
         {
           year: '2022 Dec',
-          text: 'Dived deep and started experimenting on designing and building my own portfolio website with Vue.js & Vuetify'
+          text: 'Dived deep and began experimenting with designing and building my Developer Portfolio Website with Vue.js & Vuetify'
+        },
+        {
+          year: '2023 April',
+          text: 'Completed 2 major school development projects, titled \'GoBook\' and \'Vendor and Form Management System\'. GoBook was shortlisted for the VMware Tanzu Award in Singapore Management University (Top 3 Teams in the cohort), and the latter project received notable feedbacks from the external vendor and also achieved the highest grade (A+)'
+        },
+        {
+          year: '2023 May',
+          text: 'Embarked on a Full Stack Developer and Machine Learning Internship at the Agency for Science, Technology and Research (A*STAR) under the A*STAR Research Internship Award Programme (ARIA)!'
         },
       ],
     }),
