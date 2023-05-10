@@ -61,7 +61,7 @@
                             <li class="techstackitem">Springboot</li>
                             <li class="techstackitem">Node.js</li>
                             <li class="techstackitem">Express.js</li>
-                            <li class="techstackitem">Toast Notifications</li>
+                            <li class="techstackitem">React Toastify</li>
                             <li class="techstackitem">Kafka</li>
                             <li class="techstackitem">RabbitMQ</li>
                             <li class="techstackitem">MongoDB</li>
@@ -141,7 +141,7 @@
                             <li class="techstackitem">Vue Pinia Store</li>
                             <li class="techstackitem">Chart.js</li>
                             <li class="techstackitem">Moment.js</li>
-                            <li class="techstackitem">Toast Notifications</li>
+                            <li class="techstackitem">Vue Toast Notifications</li>
                             <li class="techstackitem">Java</li>
                             <li class="techstackitem">Springboot</li>
                             <li class="techstackitem">MongoDB</li>
@@ -291,6 +291,7 @@
                         <li class="techstackitem">HTML</li>
                         <li class="techstackitem">Bootstrap</li>
                         <li class="techstackitem">EmailJS</li>
+                        <li class="techstackitem">Vue Toast Notifications</li>
                         <li class="techstackitem">Github Pages</li>
                         <li class="techstackitem">Vue CLI</li>
                     </ul>

@@ -97,7 +97,8 @@ export default {
                     {
                         position: 'top',
                         duration: '6000',
-                        dismissible: true
+                        dismissible: true,
+                        queue: true
                     }
                 );
                 console.log('FAILED', error.text);
