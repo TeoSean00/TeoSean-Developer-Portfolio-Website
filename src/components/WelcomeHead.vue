@@ -78,9 +78,6 @@ export default {
 </script>
 
 <style>
-#about {
-
-}
 .main{
     background-color: #0F1624; 
     color: hsl(204,23.8%,95.9%); 

@@ -62,6 +62,9 @@
 
 <script>
 import emailjs from '@emailjs/browser';
+import { useToast } from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
 export default {
     data() {
         return {
@@ -73,22 +76,42 @@ export default {
     },
     methods: {
     sendEmail() {
+        const $toast = useToast();
         if(this.sender_name !== '' && this.sender_org !== '' && this.sender_message !== '' && this.sender_email !== ''){
             emailjs.sendForm('service_zavzs48', 'template_dm0un79', this.$refs.form, 'Fia4_4nphvVTgneZc')
-            .then((result) => {
-                alert('You have successfully sent over a message, I will get back to you promptly :). The page will now be refreshed.')
-                console.log('SUCCESS', result.text);
+            .then(() => {
+                $toast.success(
+                    'You have successfully sent over your message, I will get back to you promptly! The page will now be refreshed.',
+                    {
+                        position: 'top',
+                        duration: '5500',
+                        dismissible: false
+                    }
+                );
                 setTimeout(() => {
                     location.reload();
-                }, 500);
+                }, 5500);
             }, (error) => {
-                alert('Unfortunately, the sending of the message is unsuccessful, it will be looked into immediately. For other methods of communication, please feel free to click on the various social icons instead!')
+                $toast.error(
+                    'Unsuccessful, please refresh the page and try again. This will be looked into immediately, for other methods of communication, please feel free to click on the various social icons instead!',
+                    {
+                        position: 'top',
+                        duration: '6000',
+                        dismissible: true
+                    }
+                );
                 console.log('FAILED', error.text);
             });
         }
         else{
-            alert(
-                'Please fill in all the applicable fields before submitting the message, thank you.'
+            $toast.warning(
+                'Please fill in all of the applicable fields before submitting the message, thank you!',
+                {
+                    position: 'top',
+                    duration: '5000',
+                    dismissible: true,
+                    queue: true
+                }
             )
         }
     }
