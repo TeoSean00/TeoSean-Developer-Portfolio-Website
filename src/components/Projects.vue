@@ -112,7 +112,7 @@
                 <v-row style="margin: 0;">
                     <v-col cols="12" style="padding-top :0; padding-bottom: 0;">
                         <v-card-text class="cardtext pb-0 px-0">
-                            A one stop Vendor and Form Management System which addresses all the basic business needs 
+                            A one-stop Vendor and Form Management System which addresses all the basic business needs 
                             while adding in additional useful features such as the ability to create fully customisable forms that 
                             can be easily assigned to vendors to be filled up and rejecting the filled forms afterwards if need be too, 
                             along with manual/automated email reminder notifications specific to both vendors and forms, 
