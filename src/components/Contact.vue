@@ -31,7 +31,7 @@
                 <h1 class="subheaderfont2">Send your message</h1>
                 <v-divider></v-divider>
                 <span class="pfontcontact">
-                    Feel free to drop me a message regarding anything under the sun (collaboration, opportunities, networking
+                    Feel free to drop me a message regarding anything under the sun (collaboration, opportunities, networking,
                     hobbies), I look forward to receiving them!
                 </span>
                 <form ref="form" @submit.prevent="sendEmail">

@@ -76,7 +76,7 @@ export default {
         },
         {
           year: '2023 May',
-          text: 'Embarked on a Full Stack Developer and Machine Learning Internship at the Agency for Science, Technology and Research (A*STAR) under the A*STAR Research Internship Award Programme (ARIA)!'
+          text: 'Embarked on a Full Stack Developer and Machine Learning Internship at the Agency for Science, Technology and Research (A*STAR) within the Institue of High Performance Computing (IHPC), under the A*STAR Research Internship Award Programme (ARIA)!'
         },
       ],
     }),
